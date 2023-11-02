@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lists">
+            <div class="row">
+                <p>Reason</p>
+                <p>money spent</p>
+                <p>from this money</p>
+                <p>your current balance</p>
+            </div>
+           <% responses.forEach(responses => { %>
+            <div class="list">
+                <h2 id="reasons">For<%= responses.reason %></h2>
+                <h2 id="moneys"><%= responses.money %>ETB</h2>
+                <h2 id="froms"><%= responses.balance %>ETB</h2>
+                <h2 id="froms"><%= responses.balanced %>ETB</h2>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
